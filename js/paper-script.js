@@ -25,6 +25,15 @@ function onFrame(event){
 		circles[i].fillColor.hue += 1;
 		//scale it down by 5%
 		circles[i].scale(0.95);	
+		//check if the circle should be deleted
+    if(circles[i].area < 1){
+    	//remove the Circle object smaller than 1
+      circles[i].remove();
+      //remove the now-deleted circle from the array
+      circles.splice(i, 1);
+      //decrement i so i++ at the end of for loop won't make it skip one 
+      i--;
+    }
 	}
 }
 
@@ -79,107 +88,107 @@ function addCircle(color){
 function alphabetEvent(event){
 	switch (event.key){
 		case 'a':
-			addCircle("rgb(0, 0, 0)");
+			addCircle("rgb(128, 0, 50)");
 			sounds[0].play();
 			break;
 		case 'b':
-			addCircle("rgb(10, 10, 10)");
+			addCircle("rgb(255, 120, 30)");
 			sounds[1].play();
 			break;
 		case 'c':
-			addCircle("rgb(20, 20, 20)");
+			addCircle("rgb(48, 128, 0)");
 			sounds[2].play();
 			break;
 		case 'd':
-			addCircle("rgb(30, 30, 30)");
+			addCircle("rgb(0, 225, 72)");
 			sounds[3].play();
 			break;
 		case 'e':
-			addCircle("rgb(40, 40, 40)");
+			addCircle("rgb(50, 0, 128)");
 			sounds[4].play();
 			break;
 		case 'f':
-			addCircle("rgb(50, 50, 50)");
+			addCircle("rgb(50, 88, 255)");
 			sounds[5].play();
 			break;
 		case 'g':
-			addCircle("rgb(60, 60, 60)");
+			addCircle("rgb(255, 255, 0)");
 			sounds[6].play();
 			break;
 		case 'h':
-			addCircle("rgb(70, 70, 70)");
+			addCircle("rgb(255, 0, 255)");
 			sounds[7].play();
 			break;
 		case 'i':
-			addCircle("rgb(80, 80, 80)");
+			addCircle("rgb(0, 255, 255)");
 			sounds[8].play();
 			break;
 		case 'j':
-			addCircle("rgb(90, 90, 90)");
+			addCircle("rgb(128, 91, 12)");
 			sounds[9].play();
 			break;
 		case 'k':
-			addCircle("rgb(100, 100, 100)");
+			addCircle("rgb(71, 128, 43)");
 			sounds[10].play();
 			break;
 		case 'l':
-			addCircle("rgb(110, 110, 110)");
+			addCircle("rgb(30, 50, 148)");
 			sounds[11].play();
 			break;
 		case 'm':
-			addCircle("rgb(120, 120, 120)");
+			addCircle("rgb(78, 158, 30)");
 			sounds[12].play();
 			break;
 		case 'n':
-			addCircle("rgb(130, 130, 130)");
+			addCircle("rgb(128, 75, 128)");
 			sounds[13].play();
 			break;
 		case 'o':
-			addCircle("rgb(140, 140, 140)");
+			addCircle("rgb(18, 128, 128)");
 			sounds[14].play();
 			break;
 		case 'p':
-			addCircle("rgb(150, 150, 150)");
+			addCircle("rgb(34, 221, 165)");
 			sounds[15].play();
 			break;
 		case 'q':
-			addCircle("rgb(160, 160, 160)");
+			addCircle("rgb(176, 53, 202)");
 			sounds[16].play();
 			break;
 		case 'r':
-			addCircle("rgb(170, 170, 170)");
+			addCircle("rgb(187, 151, 68)");
 			sounds[17].play();
 			break;
 		case 's':
-			addCircle("rgb(180, 180, 180)");
+			addCircle("rgb(150, 180, 25)");
 			sounds[18].play();
 			break;
 		case 't':
-			addCircle("rgb(190, 190, 190)");
+			addCircle("rgb(60, 60, 145)");
 			sounds[19].play();
 			break;
 		case 'u':
-			addCircle("rgb(200, 200, 200)");
+			addCircle("rgb(190, 50, 75)");
 			sounds[20].play();
 			break;
 		case 'v':
-			addCircle("rgb(210, 210, 210)");
+			addCircle("rgb(0, 90, 200)");
 			sounds[21].play();
 			break;
 		case 'w':
-			addCircle("rgb(220, 220, 220)");
+			addCircle("rgb(49, 155, 107)");
 			sounds[22].play();
 			break;
 		case 'x':
-			addCircle("rgb(230, 230, 230)");
+			addCircle("rgb(0, 15, 64)");
 			sounds[23].play();
 			break;
 		case 'y':
-			addCircle("rgb(240, 240, 240)");
+			addCircle("rgb(128, 255, 128)");
 			sounds[24].play();
 			break;
 		case 'z':
-			addCircle("rgb(250, 250, 250)");
+			addCircle("rgb(255, 128, 255)");
 			sounds[25].play();
 			break;
 	}

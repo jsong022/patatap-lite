@@ -13,7 +13,7 @@ The sound files are from Patatap (found in its [github repo](https://github.com/
 - [x] Play a sound when a key is pressed
 - [x] Unique sound for each key
 - [x] Circle color determined by key
-- [ ] Choose better colors for each alphabet key
+- [x] Choose better colors for each alphabet key
 - [ ] \(Optional) Expand by experimenting with Paper.js and adding different animations
 
 Name: Jay Song
