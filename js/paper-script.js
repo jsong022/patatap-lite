@@ -11,6 +11,7 @@ function onKeyDown(event) {
 	var newCircle = new Path.Circle(Point.random() * maxPt, 100); 
 	newCircle.fillColor = randomColor();
 	circles.push(newCircle);
+	new Howl({ src: ['./sounds/bubbles.mp3'] }).play();
 };
 
 //on each frame of the animation

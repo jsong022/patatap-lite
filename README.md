@@ -10,7 +10,9 @@ The sound files are from Patatap (found in its [github repo](https://github.com/
 - [x] Make new circles appear when key is pressed
 - [x] Randomize new circles appearances (location & color)
 - [x] Animate the circles that appear
-- [ ] Play a sound when a key is pressed
+- [x] Play a sound when a key is pressed
+- [ ] Unique sound for each key
+- [ ] Circle color determined by key
 - [ ] \(Optional) Expand by experimenting with Paper.js and adding different animations
 
 Name: Jay Song
