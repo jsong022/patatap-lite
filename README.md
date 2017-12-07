@@ -9,7 +9,7 @@ The sound files are from Patatap (found in its [github repo](https://github.com/
 ### To-Do
 - [x] Make new circles appear when key is pressed
 - [x] Randomize new circles appearances (location & color)
-- [ ] Animate the circles that appear
+- [x] Animate the circles that appear
 - [ ] Play a sound when a key is pressed
 - [ ] \(Optional) Expand by experimenting with Paper.js and adding different animations
 
